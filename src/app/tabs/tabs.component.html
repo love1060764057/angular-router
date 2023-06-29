@@ -1,0 +1,11 @@
+
+<nav>
+    <a routerLink="/tabs/tab1">tab1</a>
+    <a routerLink="/tabs/tab2">tab2</a>
+    <a routerLink="/tabs/tab3">tab3</a>
+</nav>
+<!-- 路由占位，将tabs的路由匹配到的页面插入到这里，上面a标签中的routerLink指令即是路由指令 -->
+<!-- 点击上面任意a标签根据路由指令路径匹配到相关页面后插入到这里显示，即实现导航页 -->
+<!-- 本页面有三个导航切换标签，点击tab1或其他会相应在<router-outlet></router-outlet>插入tab1页面或其他页面显示，这里实现了顶部导航切换，底部相应内容显示 -->
+<!-- 在tab1中设置了一个按钮，点击会跳转到info页面，即离开导航页，也就看不到导航选项卡 -->
+<router-outlet></router-outlet>
